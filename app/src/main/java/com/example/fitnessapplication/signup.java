@@ -30,7 +30,7 @@ public class signup extends AppCompatActivity {
                 countryCode = ccodeV.getSelectedCountryCode();
                 phoneNumber = phonnoE.getText().toString();
                 Toast.makeText(signup.this, ""+countryCode+phoneNumber, Toast.LENGTH_SHORT).show();
-
+//
 
             }
         });
