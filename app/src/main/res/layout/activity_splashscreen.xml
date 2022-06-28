@@ -5,17 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splashscreen"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/actionbarcolour">
 
 <ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/splash"
-    />
+    android:layout_marginTop="100dp"
+    android:padding="70dp"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:src="@drawable/gym"
+    android:layout_gravity="center" />
 
     <ProgressBar
+
         android:id="@+id/loading_spinner"
         style="?android:progressBarStyle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/white"
+        />
 </LinearLayout>

@@ -4,31 +4,73 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gym"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
-        <activity
-            android:name=".signup"
-            android:exported="true" >
+        <activity android:name=".Gettingagescreen">
 
+        </activity>
+        <activity android:name=".DietplanScreen" />
+        <activity android:name=".FemaleWorkoutscreen" />
+        <activity android:name=".MaleWorkoutscreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
-        <activity android:name=".Splashscreen"
-            android:exported="true"/>
+        <activity android:name=".ProfileScreen"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Gettingnamescreen"
+            android:exported="true">
 
 
+    </activity>
+        <activity android:name=".GettingTragetweightcreen"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".GettingWeightscreen"
+            android:exported="true">
+        </activity>
+
+
+        <activity android:name=".GettingHeightscreen"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".GenderSelectionscreen"
+
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+
+    </activity>
+        <activity android:name=".VarificationcodeScreen">
+
+        </activity>
+        <activity
+            android:name=".signup"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
-
-        </activity>
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
