@@ -37,6 +37,7 @@
             >
 
             <ImageView
+                android:id="@+id/male"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gradientcardcolours"
@@ -66,6 +67,7 @@
             app:cardCornerRadius="20dp">
 
             <ImageView
+                android:id="@+id/female"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gradientcardcolours"

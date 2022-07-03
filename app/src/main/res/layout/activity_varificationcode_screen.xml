@@ -16,7 +16,7 @@
 
 
         <EditText
-            android:id="@+id/phonnov"
+            android:id="@+id/codeverify"
            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_width="match_parent"

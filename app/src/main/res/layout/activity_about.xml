@@ -78,8 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:indeterminate="false"
-                android:max="100"
-                android:progress="40"
+                android:max="4"
                 android:layout_marginTop="190dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
@@ -107,3 +106,6 @@
 
 
 </LinearLayout>
+
+
+    <!-- android:progress="1"-->

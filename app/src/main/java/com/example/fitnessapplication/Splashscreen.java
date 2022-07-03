@@ -17,7 +17,7 @@ public class Splashscreen extends AppCompatActivity {
         int secondsDelayed = 2;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(Splashscreen.this, MainActivity.class));
+                startActivity(new Intent(Splashscreen.this, signup.class));
                 finish();
             }
         }, secondsDelayed * 1000);
