@@ -9,62 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
-        <activity android:name=".Gettingagescreen">
-
-        </activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".Gettingagescreen"></activity>
         <activity android:name=".DietplanScreen" />
         <activity android:name=".FemaleWorkoutscreen" />
-        <activity android:name=".MaleWorkoutscreen"
+        <activity
+            android:name=".Gettingnamescreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GettingTragetweightcreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GettingWeightscreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GettingHeightscreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GenderSelectionscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-        <activity android:name=".ProfileScreen"
-            android:exported="true">
-        </activity>
-        <activity android:name=".Gettingnamescreen"
-            android:exported="true">
-
-
-    </activity>
-        <activity android:name=".GettingTragetweightcreen"
-            android:exported="true">
-
-        </activity>
-        <activity android:name=".GettingWeightscreen"
-            android:exported="true">
-        </activity>
-
-
-        <activity android:name=".GettingHeightscreen"
-            android:exported="true">
-        </activity>
-
-        <activity android:name=".GenderSelectionscreen"
-
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
-
-    </activity>
-        <activity android:name=".VarificationcodeScreen">
-
-        </activity>
+        <activity android:name=".VarificationcodeScreen"></activity>
         <activity
             android:name=".signup"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Splashscreen"
             android:exported="true" />
