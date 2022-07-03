@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class About extends AppCompatActivity {
 
-    TextView toptext,bottomtext;
+    TextView toptext, bottomtext;
     EditText Edittext;
     Button continuebtn, calculatebtn;
     ProgressBar progressBar;

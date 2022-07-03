@@ -10,20 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
         <activity android:name=".About"></activity>
-        <activity android:name=".Gettingagescreen"></activity>
-        <activity android:name=".DietplanScreen" />
         <activity android:name=".FemaleWorkoutscreen" />
         <activity
-            android:name=".Gettingnamescreen"
-            android:exported="true"></activity>
-        <activity
-            android:name=".GettingTragetweightcreen"
-            android:exported="true"></activity>
-        <activity
             android:name=".GettingWeightscreen"
-            android:exported="true"></activity>
-        <activity
-            android:name=".GettingHeightscreen"
             android:exported="true"></activity>
         <activity
             android:name=".GenderSelectionscreen"/>
