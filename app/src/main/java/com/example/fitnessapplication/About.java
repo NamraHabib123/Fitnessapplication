@@ -93,7 +93,7 @@ public class About extends AppCompatActivity {
             int trimvalue= (int) (BMIvalue*100);
             double shortBMIvalue= ((double)trimvalue)/100;
             //BMITV.setText(""+shortBMIvalue);
-            Toast.makeText(this,""+shortBMIvalue,Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,""+shortBMIvalue,Toast.LENGTH_SHORT).show();
 
 
 
