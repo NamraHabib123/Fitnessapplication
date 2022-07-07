@@ -9,30 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
-        <activity android:name=".About"></activity>
-        <activity android:name=".FemaleWorkoutscreen" />
+        <activity android:name=".Diet"></activity>
+        <activity android:name=".Workout" />
+        <activity android:name=".About" />
         <activity
-            android:name=".GettingWeightscreen"
-            android:exported="true"></activity>
-        <activity
-            android:name=".GenderSelectionscreen"/>
-
-        <activity android:name=".VarificationcodeScreen"></activity>
+            android:name=".FemaleWorkoutscreen"
+            android:exported="true" />
+        <activity android:name=".GenderSelectionscreen" />
+        <activity android:name=".VarificationcodeScreen" />
         <activity
             android:name=".signup"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" />
     </application>
 
 </manifest>

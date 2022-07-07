@@ -40,14 +40,25 @@ public class signup extends AppCompatActivity {
      Register.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {
-             Intent myIntent = new Intent(signup.this, VarificationcodeScreen.class);
-             startActivity(myIntent);
+            checks();
          }
      });
 
 
     }
 
+    public void checks()
+    {
+        if(phonnoE.getText().toString().isEmpty())
+        {
+            Toast.makeText(this, "Please fill the empty field", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Intent myIntent = new Intent(signup.this, VarificationcodeScreen.class);
+            startActivity(myIntent);
+        }
+    }
 
 
 }

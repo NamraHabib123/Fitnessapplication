@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GettingWeightscreen extends AppCompatActivity {
+public class Workout extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_getting_weightscreen);
-        getSupportActionBar().hide();
+        setContentView(R.layout.activity_workout);
     }
 }
