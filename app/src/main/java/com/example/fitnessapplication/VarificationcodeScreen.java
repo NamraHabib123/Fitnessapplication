@@ -36,7 +36,7 @@ public class VarificationcodeScreen extends AppCompatActivity {
 
     public void verification()
     {
-        if(code.toString().isEmpty())
+        if(code.getText().toString().isEmpty())
         {
             code.getText().clear();
             Toast.makeText(this, "Please fill the empty field", Toast.LENGTH_SHORT).show();

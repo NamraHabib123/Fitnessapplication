@@ -79,6 +79,7 @@ public class About extends AppCompatActivity {
            else
            {
                continuebtn.setText("calculate results");
+               index=index+1;
            }
 
        }
