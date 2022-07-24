@@ -25,11 +25,9 @@ import java.util.concurrent.TimeUnit;
 
 public class VarificationcodeScreen extends AppCompatActivity {
      //EditText code;
-     Button btncode;
-
     //The edittext to input the code
     private EditText editTextCode;
-
+    Button btncode;
 
     //It is the verification id that will be sent to the user
     private String mVerificationId;
