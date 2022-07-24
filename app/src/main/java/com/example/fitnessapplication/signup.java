@@ -17,6 +17,7 @@ public class signup extends AppCompatActivity {
     Button Register;
     CountryCodePicker ccodeV;
     String countryCode,phoneNumber;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,25 +26,14 @@ public class signup extends AppCompatActivity {
         phonnoE = findViewById(R.id.phonnov);
         ccodeV  = findViewById(R.id.ccp);
         Register = findViewById(R.id.btnRegister);
+
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                countryCode = ccodeV.getSelectedCountryCode();
-                phoneNumber = phonnoE.getText().toString();
-                Toast.makeText(signup.this, ""+countryCode+phoneNumber, Toast.LENGTH_SHORT).show();
-//
-
+                checks();
+              //  Toast.makeText(signup.this, ""+countryCode+phoneNumber, Toast.LENGTH_SHORT).show();
             }
         });
-
-
-     Register.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View view) {
-            checks();
-         }
-     });
-
 
     }
 
@@ -55,7 +45,10 @@ public class signup extends AppCompatActivity {
         }
         else
         {
+            countryCode = ccodeV.getSelectedCountryCode();
+            phoneNumber = phonnoE.getText().toString();
             Intent myIntent = new Intent(signup.this, VarificationcodeScreen.class);
+            myIntent.putExtra("PN",countryCode+phoneNumber);
             startActivity(myIntent);
         }
     }
