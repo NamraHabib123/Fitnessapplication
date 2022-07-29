@@ -37,7 +37,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30sp"
                 android:layout_weight="1"
@@ -47,8 +47,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/profile"
-                    android:padding="20dp"
+                    android:src="@drawable/fullbodyworkou"
+                    android:scaleType="fitXY"
+
                     />
 
                 <TextView
@@ -67,7 +68,7 @@
             <!-- for ABS workout-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -79,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/chestworkou"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -98,7 +99,7 @@
             <!-- for arms workout-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -109,8 +110,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/armworkou"
-                    android:padding="20dp"/>
+                    android:src="@drawable/armsworkou"
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -129,7 +130,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -141,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/legworkout"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -160,7 +161,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -172,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/chestworkou"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"

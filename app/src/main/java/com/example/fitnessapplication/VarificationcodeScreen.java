@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+ package com.example.fitnessapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,6 +54,7 @@ public class VarificationcodeScreen extends AppCompatActivity {
 
 
         sendVerificationCode(phonenumber);
+        //Toast.makeText(this, ""+phonenumber, Toast.LENGTH_SHORT).show();
 
 
         //if the automatic sms detection did not work, user can also enter the code manually
@@ -80,12 +81,11 @@ public class VarificationcodeScreen extends AppCompatActivity {
 
     private void sendVerificationCode(String mobile) {
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                "92"+ mobile,
+                "+" + mobile,
                 60,
-                TimeUnit.SECONDS,
-                this,
+                TimeUnit.SECONDS,VarificationcodeScreen.this,
                 mCallbacks);
-        PhoneAuthProvider.getInstance().verifyPhoneNumber("92" +mobile,60,TimeUnit.SECONDS, (Activity) TaskExecutors.MAIN_THREAD,mCallbacks);
+        //PhoneAuthProvider.getInstance().verifyPhoneNumber(mobile,60,TimeUnit.SECONDS, (Activity) TaskExecutors.MAIN_THREAD,mCallbacks);
     }
     //the callback to detect the verification status
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {

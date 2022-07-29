@@ -37,7 +37,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30sp"
                 android:layout_weight="1"
@@ -48,7 +48,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/paleodiet"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -66,7 +66,7 @@
             <!-- for vegan diet-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/vegandiet"
-                    android:padding="20dp"
+                    android:scaleType="fitXY"
                     />
 
                 <TextView
@@ -98,7 +98,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/lowcarbdiet"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -128,7 +128,7 @@
             <!-- for atkin diet-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/atkindiet"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -160,7 +160,7 @@
             <!-- for low calories diet-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30sp"
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/gradientcardcolours"
                     android:src="@drawable/lowcalories"
-                    android:padding="20dp"/>
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
