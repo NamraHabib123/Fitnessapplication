@@ -9,18 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
-        <activity android:name=".Diet"></activity>
-        <activity android:name=".Workout"
+        <activity android:name=".Workoutlist"></activity>
+        <activity android:name=".Diet" />
+        <activity
+            android:name=".Workout"
             android:exported="true">
 
-
         </activity>
-
-        <activity android:name=".About"
-            android:exported="true" >
-
-
-        </activity>
+        <activity
+            android:name=".About"
+            android:exported="true"></activity>
         <activity
             android:name=".FemaleWorkoutscreen"
             android:exported="true" />
@@ -31,9 +29,7 @@
             android:exported="true" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

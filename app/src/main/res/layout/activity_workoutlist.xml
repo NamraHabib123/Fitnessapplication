@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment"
     android:orientation="vertical"
-    android:background="@color/actionbarcolour">
-
+    android:background="@color/actionbarcolour"
+    tools:context=".Workoutlist">
 
     <TextView
-        android:id="@+id/text_notifications"
+        android:id="@+id/WorkoutlistTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="all workout challenge"
-        android:textAllCaps="true"
+        android:text="Title"
         android:textColor="@color/white"
-        android:textSize="20sp"
         android:textStyle="bold"
+        android:textSize="25sp"
         android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
         />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +31,7 @@
             android:orientation="vertical"
             android:paddingBottom="80sp">
 
-            <!-- for full body workout-->
+            <!-- Card 1-->
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card1"
@@ -44,30 +42,30 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp">
 
-                <ImageView
+
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/FA1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/fullbodyworkou"
-                    android:scaleType="fitXY"
-
+                    android:layout_weight="1"
+                    android:background="#333c69"
+                    android:layout_marginTop="20dp"
                     />
 
                 <TextView
                     android:id="@+id/TV1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:gravity="center"
-                    android:text="full body workout"
+                    android:text="the paleo diet"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="@color/actionbarcolour"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
-            <!-- for ABS workout-->
+            <!-- Card 2-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
@@ -78,29 +76,29 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp">
 
-                <ImageView
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/FA2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/chestworkou"
-                    android:scaleType="fitXY"/>
-
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#333c69"
+                    android:layout_marginTop="20dp"
+                    />
                 <TextView
                     android:id="@+id/TV2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:gravity="center"
-                    android:text="Abs workout"
+                    android:text="the vegan diet"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="@color/actionbarcolour"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Card 3-->
 
-            <!-- for arms workout-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card3"
                 android:layout_width="match_parent"
@@ -111,29 +109,28 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp">
 
-                <ImageView
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/FA3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/armsworkou"
-                    android:scaleType="fitXY"/>
-
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#333c69"
+                    android:layout_marginTop="20dp"
+                    />
                 <TextView
                     android:id="@+id/TV3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:gravity="center"
-                    android:text="arms workout"
+                    android:text="low-carb diets"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="@color/actionbarcolour"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
-            <!-- for thighs workout-->
-
+            <!-- Card 4-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card4"
                 android:layout_width="match_parent"
@@ -144,29 +141,31 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp">
 
-                <ImageView
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/FA4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/legworkout"
-                    android:scaleType="fitXY"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#333c69"
+                    android:layout_marginTop="20dp"
+                    />
 
                 <TextView
                     android:id="@+id/TV4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:gravity="center"
-                    android:text="thighs workout"
+                    android:text="the atkins diet"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="@color/actionbarcolour"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
-            <!-- for chest workout-->
 
+
+            <!-- Card 5-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card5"
                 android:layout_width="match_parent"
@@ -177,33 +176,30 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp">
 
-                <ImageView
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/FA5"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/gradientcardcolours"
-                    android:src="@drawable/chestworkou"
-                    android:scaleType="fitXY"/>
-
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#333c69"
+                    android:layout_marginTop="20dp"
+                    />
                 <TextView
                     android:id="@+id/TV5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:gravity="center"
-                    android:text="chest workout"
+                    android:text="low calories diet"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="@color/actionbarcolour"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
 
 
     </ScrollView>
-
-
 
 
 </LinearLayout>
